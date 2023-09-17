@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../Fonts/LexendDeca-SemiBold.ttf') format('truetype');
+}
+
+/* Reset some default styles for consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* 004225
+F5F5DC
+FFB000
+FFCF9D */
+
+/* Set a background color and font family */
+body {
+    background-color: #F5F5DC;
+    font-family: 'Roboto', sans-serif;
+}
+.sudoku-board {
+    font-family: monospace;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+.sudoku-cell {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+.sudoku-cell.collapsed {
+    background-color: #f0f0f0;
+}
+h1 {
+    text-align: center;
+    font-size: 56px;
+}
+button {
+    margin: 0 auto;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFB000;
+}
+.solveButton {
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    background-color: #FFCF9D;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    width: 100%;
+}
+
+.footer p {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+    margin-left: 2%;
+    margin-top: 20px;
+}
+
+.footer img {
+    flex: 1;
+    max-width: 50%;
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 20px;
+    width: 5%;
+    height: 5%;
+}

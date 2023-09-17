@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../Fonts/LexendDeca-SemiBold.ttf') format('truetype');
+}
+
+/* Reset some default styles for consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and font family */
+body {
+    background-color: #F5F5DC; /* White background */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 004225
+F5F5DC
+FFB000
+FFCF9D */
+
+/* Style the header and navigation */
+header {
+    background-color: #004225; /* Google Blue */
+    color: #fff;
+    padding: 15px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333; 
+    margin-left: 2%;
+}
+
+h2 {
+    font-size: 24px;
+    color: #FFB000; /* Google Blue */
+    margin-left: 2%;
+}
+
+p {
+    font-size: 16px;
+    color: #666; /* Slightly dark text color */
+    margin-bottom: 20px;
+    margin-left: 2%;
+}
+
+/* Style the contact information */
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    margin-left: 2%;
+}
+
+ul li a {
+    color: #4285f4; /* Google Blue */
+    text-decoration: none;
+    margin-left: 2%;
+}
+
+td {
+    width: 50%;
+}
+
+.container {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.container h1, h2, a, p {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+footer {
+    background-color: #FFCF9D;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    width: 100%;
+}
+
+.footer p {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+    margin-left: 2%;
+    margin-top: 20px;
+}
+
+.footer img {
+    flex: 1;
+    max-width: 50%;
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 20px;
+    width: 5%;
+    height: 5%;
+}
