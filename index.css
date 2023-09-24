@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('../Fonts/LexendDeca-SemiBold.ttf') format('truetype');
+    src: url('Fonts/LexendDeca-SemiBold.ttf') format('truetype');
 }
 
 /* Reset some default styles for consistency */
@@ -13,6 +13,7 @@ body, h1, h2, p, ul, li {
 body {
     background-color: #F5F5DC; /* White background */
     font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw; /* Base font size is 16px */
 }
 
 /* 004225
@@ -97,8 +98,10 @@ footer {
 }
 
 .description {
-    display: flex; /* Set the display property to flex */
-    justify-content: space-between; /* Space items evenly horizontally */
+    display: flex;
+	flex-direction :column;
+	align-items: center;
+	justify-items: center;
 }
 
 .description-content {
@@ -110,11 +113,24 @@ footer {
     flex: 1; /* Allow the text to grow and take available space */
     max-width: 50%;
     text-align: left;
+    font-size: auto;
+}
+
+.description-text p {
+    font-size: 1.5vw;
+}
+
+figcaption {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #666; /* Slightly dark text color */
 }
 
 .description-image {
     flex: 1; /* Allow the image to grow and take available space */
     max-width: 50%;
+    max-height: fit-content;
     align-content: right;
 }
 
@@ -122,12 +138,6 @@ footer {
     margin-left: 5%;
     width: 85%; /* Make the image fill its container */
     height: auto; /* Maintain the image's aspect ratio */
-}
-
-.description-image p {
-    margin-left: 72%;
-    font-size: 14px;
-    color: #666; /* Slightly dark text color */
 }
 
 footer {
@@ -155,4 +165,114 @@ footer {
     margin-top: 20px;
     width: 5%;
     height: 5%;
+}
+
+.menu-button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Style for the mobile dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #004225; /* Google Blue */
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Style for the links in the mobile dropdown menu */
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the mobile dropdown menu when the button is clicked */
+.show {
+    display: block;
+}
+
+
+/* Media query for screens smaller than 768px (typical mobile screens) */
+@media (max-width: 720px) {
+    body {
+        font-size: 3vw; /* Adjust font size for smaller screens */
+    }
+
+    header {
+        padding: 10px; /* Reduce header padding */
+    }
+    
+    .desktop-menu {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    h1 {
+        font-size: 4vw; /* Decrease heading font size */
+    }
+
+    h2 {
+        font-size: 4vw; /* Decrease heading font size */
+    }
+
+    .description-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description-text {
+        text-align: center;
+        margin: 10px 0; /* Reduce the vertical margin around text */
+        max-width: 100%;
+    }
+
+    .description-text p{
+        font-size: 3vw;
+    }
+
+    .description-image {
+        flex: 1; /* Allow the image to grow and take available space */
+        max-width: 100%;
+        max-height: fit-content;
+        align-content: right;
+    }
+    
+    .description-image img {
+        margin-left: 5%;
+        width: 85%; /* Make the image fill its container */
+        height: auto; /* Maintain the image's aspect ratio */
+    }
+
+    .container {
+        padding: 10px; /* Add padding to the container for page sides */
+    }
+
+    ul {
+        margin-left: 2%; /* Add margin to lists */
+    }
+
+    .tools img {
+        width: 30px; /* Decrease icon size */
+        height: 30px;
+        margin-right: 5px; /* Add some space between icons */
+    }
+
+    .footer img {
+        width: 20px; /* Decrease social media icon size */
+        height: 20px;
+    }
 }
